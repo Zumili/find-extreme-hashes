@@ -3,7 +3,7 @@ Find the smallest hash of a specific type like MD5, SHA1 and more in python 3.x.
 
 ## How to install?
 
-`git clone https://github.com/Zumili/Python-Find-Smallest-Hash`
+`git clone https://github.com/Zumili/find-smallest-hash-py3`
 
 ## How to run?
 
