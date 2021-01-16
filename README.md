@@ -14,12 +14,12 @@ Options Short/Long      | Type | Description
     ====================+======+========================================= 
     -u, --user-name     | Str  | user-name works as pre- or postfix  
     -c, --charset       | Num  | [-c ?] charset [0,1,2,3,4,5,6,7,8]  
-    -r, --random-length | Num  | length of random string [1-31]: 0 or not used for sequential brute force  
+    -r, --random-length | Num  | length of random string [1-31]: 0 or not used for brute force  
     -m, --hash-type     | Num  | [-m ?] hash mode 0=MD5, 1400=SHA256, ...  
     -o, --output-file   | Str  | output file for smallest hash  
     -d, --digits-only   |      | when hash should only contain digits (0-9)  
     -p, --post-fix      |      | selects if user-name should be postfix  
-    -s, --surpress-info |      | no info only candidate, good for pipe  
+    -s, --suppress-info |      | no info only hash:candidate pair, good for pipe  
 ```
 
 
