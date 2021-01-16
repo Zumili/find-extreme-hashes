@@ -12,7 +12,7 @@ import random
 info = """
   Name            : Find Smallest Hash
   Created By      : Thomas Messmer
-  Blog            : http://thomasmessmer.com
+  Blog            : http://thomas-messmer.com
   Documentation   : https://github.com/zumili/
   License         : The MIT License
   Version         : 1.0
