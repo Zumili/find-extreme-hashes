@@ -136,7 +136,7 @@ def hashit(hash_string):
         smallest_hexdigest = hashlib_type.hexdigest()
         candidates_found += 1
         if not suppress_info:
-            print('\n\n\nFOUND SMALLER HASH\n')
+            print('\n\n\nFound smaller hash!\n')
             print(smallest_hexdigest+':'+hash_string)
             print("\n[-] Time: ", time.strftime('%H:%M:%S'))
             print("[-] Keywords attempted: ", total_pass_try,'')
@@ -163,7 +163,7 @@ def print_help(msg):
     -o, --output-file   | Str  | output file for smallest hash
     -d, --digits-only   |      | when hash should only contain digits (0-9)
     -p, --post-fix      |      | selects if user-name should be postfix
-    -s, --surpress-info |      | no info only candidate, good for pipe
+    -s, --suppress-info |      | no info only hash:candidate pair, good for pipe
     """%sys.argv[0])
     return
 
