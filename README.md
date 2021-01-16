@@ -1,5 +1,5 @@
 # find-smallest-hash-py3
-Find the smallest hash of a specific type like MD5, SHA1 and more in python 3.x.
+Find the smallest hash of a specific type like MD5, SHA1 and more in python > 3.6.
 
 ## How to install?
 
