@@ -10,14 +10,14 @@ import getopt
 import random
 
 info = """
-  Name            : Find Smallest Hash
+  Name            : find-smallest-hash-py3.py
   Created By      : Thomas Messmer
   Blog            : http://thomas-messmer.com
-  Documentation   : https://github.com/zumili/
+  Documentation   : https://github.com/Zumili/
   License         : The MIT License
   Version         : 1.0
 """
-# A lot of globals, ugly I know, but it increases the performace a bit...
+# A lot of globals, ugly I know, but it increases the performance a bit...
 
 smallest_hexdigest =  ("FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
                        "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF"
@@ -61,10 +61,10 @@ def _attack(charset_combined):
     if suppress_info == False:
         print(info)
         print("[+] Start Time: ", time.strftime('%H:%M:%S'))
-        print("CHARSET: ",charset_combined)
+        print("Charset: ",charset_combined)
         if user_name != "":
-            print('USERNAME:', user_name)
-        print('OUTPUT-FILE:', output_file)   
+            print('User-Name:', user_name)
+        print('Output-File:', output_file)   
         time.sleep(2.0)
         t = threading.Thread(target=animate)
         t.start()
