@@ -13,7 +13,7 @@ info = """
   Name            : find-smallest-hash-py3.py
   Created By      : Thomas Messmer
   Blog            : http://thomas-messmer.com
-  Documentation   : https://github.com/Zumili/
+  Documentation   : https://github.com/Zumili/find-smallest-hash-py3
   License         : The MIT License
   Version         : 1.0
 """
