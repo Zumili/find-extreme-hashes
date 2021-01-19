@@ -1,13 +1,13 @@
-# find-smallest-hash-py3
+# find-extreme-hashes
 Find the smallest hash of a specific type like MD5, SHA1 and more in python > 3.6.
 
 ## How to install?
 
-`git clone https://github.com/Zumili/find-smallest-hash-py3`
+`git clone https://github.com/Zumili/find-extreme-hashes`
 
 ## How to run?
 
-`python find-smallest-hash-py3.py -h`
+`python find-extreme-hashes.py -h`
 
 ```bash
 Options Short/Long      | Type | Description
@@ -24,27 +24,27 @@ Options Short/Long      | Type | Description
 
 
 Show hash types  
-`python find-smallest-hash-py3.py -m ?`
+`python find-extreme-hashes.py -m ?`
 
 Show charsets  
-`python find-smallest-hash-py3.py -c ?`
+`python find-extreme-hashes.py -c ?`
 
 ### Examples
 
 Finding the smallest MD5 hash (-m 0) with a brute force approach  
-`python find-smallest-hash-py3.py -m 0`
+`python find-extreme-hashes.py -m 0`
 
 Finding the smallest SHA1 hash (-m 100) with a randomized approach, adding a user-name as prefix and a random string with the length of 8 (-r 8)  
-`python find-smallest-hash-py3.py -m 100 -u <USER-NAME> -r 8`
+`python find-extreme-hashes.py -m 100 -u <USER-NAME> -r 8`
 
 Finding the smallest BLAKE2B hash (-m 600) with a randomized approach, adding a user-name as postfix (-p) and a random string with the length of 12 (-r 12) with charset 4 [digits] (-c 4)  
-`python find-smallest-hash-py3.py -m 100 -u <USER-NAME> -p -r 12 -c 4`
+`python find-extreme-hashes.py -m 100 -u <USER-NAME> -p -r 12 -c 4`
 
 Finding the smallest SHA-256 hash (-m 1400) which only contains digits (-d) and write the smallest hash:plain pair to a file (-o OUTPUT.txt)  
-`python find-smallest-hash-py3.py -m 1400 -d -o OUTPUT.txt`
+`python find-extreme-hashes.py -m 1400 -d -o OUTPUT.txt`
 
 Finding the smallest SHA-512 hash (-m 1700) with randomized approach with a random string with the length of 8, charset 3 [ascii_letters] and suppress all additional information (-s) except for the hash:plain pair and pipe that into a file  
-`python find-smallest-hash-py3.py -m 1700 -r 8 -c 3 -s > OUTPUT.txt`
+`python find-extreme-hashes.py -m 1700 -r 8 -c 3 -s > OUTPUT.txt`
 
 ## Version
 1.0
