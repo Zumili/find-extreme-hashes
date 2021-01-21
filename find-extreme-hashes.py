@@ -620,8 +620,8 @@ def main(argv):
     if hashtype == "?":
         print_hashtypes()
         sys.exit()
-    elif hashtype.lower() in hashlib.algorithms_available:
-        hashlib_type_str = hashtype.lower()
+    elif hashtype in hashlib.algorithms_available:
+        hashlib_type_str = hashtype
     else:
         #print_help("\noption -m requires argument\n"
         #           + " use [-m ?] for hash type list")
