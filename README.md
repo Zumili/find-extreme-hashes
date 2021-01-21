@@ -19,21 +19,20 @@ A CPU-based tool to find the smallest or biggest hash of a specific type like MD
 
 ```bash
  Options Short/Long  | Type | Description
- ====================+======+========================================= 
- -m, --hash-type     | Num  | [-m ?] hash mode e.g. MD5, SHA256
- -c, --charset       | Num  | [-c ?] charset [0,1,2,...,custom]
- -r, --random-length | Num  | length of random string [1-31]:
-                                 [-r 0} or [not used] for brute force mode
- -f, --find-mode     | Num  | find 0=small 1=big 2=small and big
- -d, --digits-only   |      | hash must only contain digits (0-9)
- -u, --user-name     | Str  | user-name works as pre- or postfix
- -p, --post-fix      |      | selects if user-name should be postfix
- -o, --output-file   | Str  | output file for found extreme hashes
- -n, --no-info       |      | only hash:candidate pair, good for pipe
- -w, --worker        | Num  | worker count, if [not used] 1 worker used
- -e, --exclude-chars | Str  | string of characters removed from charset
- -b, --bf-steps      | Num  | [-b ?] brute force step size if worker >1
- -s, --shuffle       |      | shuffle final charset
+ ====================+======+=========================================  
+ -m, --hash-type     | Num  | [-m ?] hash mode e.g. 0=MD5, 1400=SHA256  
+ -c, --charset       | Num  | [-c ?] charset [0,1,2,...,custom]  
+ -r, --random-length | Num  | [-r ?] length of rand str or brute force  
+ -f, --find-mode     | Num  | [-f ?] find 0=small 1=big 2=small and big  
+ -d, --digits-only   |      | hash must only contain digits (0-9)  
+ -u, --user-name     | Str  | user-name works as pre- or postfix  
+ -p, --post-fix      |      | selects if user-name should be postfix  
+ -o, --output-file   | Str  | output file for found extreme hashes  
+ -n, --no-info       |      | only hash:candidate pair, good for pipe  
+ -w, --worker        | Num  | [-w ?] worker count, minimum 1 worker  
+ -e, --exclude-chars | Str  | string of characters removed from charset  
+ -b, --bf-steps      | Num  | [-b ?] brute force step size if worker >1  
+ -s, --shuffle       |      | shuffle final charset  
 ```
 
 
