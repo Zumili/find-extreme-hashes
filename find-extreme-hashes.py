@@ -429,7 +429,7 @@ def print_output_file_info():
     return    
 
 def print_hashtypes():
-    tmp_list = list(hashlib.algorithms_guaranteed)
+    tmp_list = list(hashlib.algorithms_available)
     tmp_list.sort() # sorts normally by alphabetical order
     tmp_list.sort(key=len) # sorts by length
     tmp_str ='\n   '.join(tmp_list)
@@ -620,7 +620,7 @@ def main(argv):
     if hashtype == "?":
         print_hashtypes()
         sys.exit()
-    elif hashtype.lower() in hashlib.algorithms_guaranteed:
+    elif hashtype.lower() in hashlib.algorithms_available:
         hashlib_type_str = hashtype.lower()
     else:
         #print_help("\noption -m requires argument\n"
