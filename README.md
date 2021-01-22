@@ -62,8 +62,19 @@ Finding the smallest SHA512 hash (-m sha512) with randomized approach with a ran
 Finding the smallest MD5 hash, with brute force mode (-r NOT USED!) using charset 4 (-c 4) containing "0123456789abcdefABCDEF" and excluding "abcdef" (-e abcdef) from that charset. Final charset is then: "0123456789ABCDEF".  
 `python find-extreme-hashes.py -m md5 -c 4 -e abcdef`
 
-Finding smallest SHA256 hash (-m sha256) with custom charset (-c Thequickbrownfxjmpsvtlazydg) and suppressing the info (-n) with 3 workers (-w 3) and a brute force step size for each worker of 6 characters (-b 6).  
+Finding smallest SHA256 hash (-m sha256) with custom charset (-c Thequickbrownfxjmpsvtlazydg) and no info (-n) with 3 workers (-w 3) and a brute force step size for each worker of 6 characters (-b 6).  
 `python find-extreme-hashes.py -m sha256 -c Thequickbrownfxjmpsvtlazydg -n -w 3 -b 6` 
+
+### Running in background
+
+You can also run the script in background with using e.g. (nohup) at the beginning of line and (>& /dev/null &) at the end to prevent any output file from being created.
+`nohup python3.7 find-extreme-hashes.py -m md5 -r 10 -c 6 -w 2 -u <USER-NAME> -o OUTPUT.txt -n >& /dev/null &`
+
+To stop the processes created with nohub use:
+`jobs`
+`[1] + Running nohup python find-extreme-hashes.py ... <options> ...`
+`kill %1`
+
 ## Version
 1.0
 
