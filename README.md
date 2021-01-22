@@ -84,7 +84,7 @@ You can also run the script in background with using e.g. (nohup) at the beginni
 
 To stop the processes created with nohub use:  
 `jobs`  
->[1] + Running nohup python find-extreme-hashes.py ... <options> ...  
+*>> [1] + Running nohup python find-extreme-hashes.py ... options ...*  
 `kill %1`  
 
 ## Version
