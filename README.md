@@ -42,6 +42,18 @@ Show hash types
 Show charsets  
 `python find-extreme-hashes.py -c ?`
 
+Show random length and brute force selector information  
+`python find-extreme-hashes.py -r ?`
+
+Show find modes  
+`python find-extreme-hashes.py -f ?`
+
+Show worker information  
+`python find-extreme-hashes.py -w ?`
+
+Show brute force step size information  
+`python find-extreme-hashes.py -b ?`
+
 ### Examples
 
 Finding the smallest (-f 0 or NOT USED!) MD5 hash (-m md5) with a brute force approach (-r NOT USED!).  
@@ -63,17 +75,17 @@ Finding the smallest MD5 hash, with brute force mode (-r NOT USED!) using charse
 `python find-extreme-hashes.py -m md5 -c 4 -e abcdef`
 
 Finding smallest SHA256 hash (-m sha256) with custom charset (-c Thequickbrownfxjmpsvtlazydg) and no info (-n) with 3 workers (-w 3) and a brute force step size for each worker of 6 characters (-b 6).  
-`python find-extreme-hashes.py -m sha256 -c Thequickbrownfxjmpsvtlazydg -n -w 3 -b 6` 
+`python find-extreme-hashes.py -m sha256 -c Thequickbrownfxjmpsvtlazydg -n -w 3 -b 6`
 
 ### Running in background
 
-You can also run the script in background with using e.g. (nohup) at the beginning of line and (>& /dev/null &) at the end to prevent any output file from being created.
-`nohup python3.7 find-extreme-hashes.py -m md5 -r 10 -c 6 -w 2 -u <USER-NAME> -o OUTPUT.txt -n >& /dev/null &`
+You can also run the script in background with using e.g. (nohup) at the beginning of line and (>& /dev/null &) at the end to prevent any output file from being created.  
+`nohup python find-extreme-hashes.py -m md5 -r 10 -c 6 -w 2 -u <USER-NAME> -o OUTPUT.txt -n >& /dev/null &`
 
-To stop the processes created with nohub use:
-`jobs`
-`[1] + Running nohup python find-extreme-hashes.py ... <options> ...`
-`kill %1`
+To stop the processes created with nohub use:  
+`jobs`  
+[1] + Running nohup python find-extreme-hashes.py ... <options> ...  
+`kill %1`  
 
 ## Version
 1.0
